@@ -1,0 +1,135 @@
+.page-footer {
+    background-color: $secondary-bg-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .logo-footer {
+    color: $accent-color;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .footer-list {
+    list-style: none;
+    & a {
+        text-decoration: none;
+      }
+  }
+  .footer-link {
+    color: $tertiary-color;
+    width: 231px;
+    display: block;
+  }
+  .address-link {
+    color: $primary-bg-color;
+    width: 231px;
+    display: block;
+  }
+  .address {
+    font-style: normal;
+  }
+  .footer-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .flex {
+    display: flex;
+    align-items: baseline;
+  }
+  .roster {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-bg-color;
+    margin-bottom: 20px;
+  }
+  .footer-point {
+    width: 44px;
+    height: 44px;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+      }
+  }
+  .link-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+  background-color: $accent-color;
+}
+  }
+  .footer-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .second-div {
+    margin-left: 70px;
+  }
+  
+  .form-div {
+    margin-left: 93px;
+  }
+  .form-title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-bg-color;
+    margin-bottom: 20px;
+  }
+  .footer-field {
+    display: flex;
+  }
+  .footer-form-input {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: $secondary-bg-color;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+  
+    outline: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+  .footer-form-btn {
+    color: $primary-bg-color;
+    background-color: $accent-color;
+    width: 200px;
+    height: 50px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border: none;
+    padding: 10px 28px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }

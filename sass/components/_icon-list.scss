@@ -1,0 +1,45 @@
+.icon-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 16px;
+  }
+  .icon-list__item {
+    width: 44px;
+    height: 44px;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+      }
+  }
+  .icon-list__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+  background-color: $accent-color;
+}
+  }
+
+  .icon-list__svg {
+    width: 20px;
+    height: 20px;
+    fill: $icon-colour;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .icon-list__link:hover &,
+    .icon-list__link:focus & {
+  fill: $primary-bg-color;
+}
+  }

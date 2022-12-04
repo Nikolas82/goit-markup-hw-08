@@ -1,0 +1,32 @@
+.features-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .features-list__content {
+    width: 270px;
+    height: 120px;
+    background-color: $button-color;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+  .features-list__item {
+    width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+      }
+  }
+  .features-list__title {
+    color: $secondary-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    width: 270px;
+    height: 16px;
+  }

@@ -1,0 +1,32 @@
+.page-header {
+    border-bottom: 1px solid $secondary-border-color;
+  }
+  .logo-header {
+    color: $accent-color;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    width: 145px;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  .header-item {
+    position: relative;
+    &:not(:last-child) {
+        margin-right: 50px;
+      }
+  }
+  .header-icon {
+    margin-right: 10px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .list:hover &,
+    .list:focus & {
+      fill: $accent-color;
+    }   
+
+}

@@ -25,10 +25,7 @@
     
     }
     
-    
-
-    
-  }
+    }
   .features-list__item {
     width: 450px;
     
@@ -56,4 +53,12 @@
     margin-bottom: 10px;
     width: 270px;
     height: 16px;
+    
+    
+
+    @media screen and(max-width:$mobile) {
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }

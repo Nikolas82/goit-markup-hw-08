@@ -346,6 +346,13 @@ body {
   width: 270px;
   height: 16px;
 }
+@media screen and (max-width: 480px) {
+  .features-list__title {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .section {
   padding-top: 60px;

@@ -1,14 +1,47 @@
 .client-list {
     list-style: none;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+
+    @media screen and(min-width: $desktop) {
+      
+    align-items: center;
+    
+    }
   }
-  .client-point:not(:last-child) {
+
+  
+
+  .client-point{
+    @media screen and (min-width: 0px)  and (max-width:767px ){
+      width: 210px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+  
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+      &:nth-child(2n) {
+        margin-right: 0;
+    }
+    }
+    
+  @media screen and(min-width: $desktop){
+    width: 170px;
+      
+  }
+
+}
+.client-point:not(:last-child) {
+  @media screen and(min-width: $desktop){
     margin-right: 30px;
   }
+
+}
+
   .client-link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid $icon-colour;
   
@@ -24,6 +57,11 @@
     &:focus {
   border: 1px solid $accent-color;
 }
+@media screen and(min-width: $desktop){
+  width: 170px;
+    
+}
+
   }
   .client-icon {
     width: 106px;

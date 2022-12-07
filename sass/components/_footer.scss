@@ -38,21 +38,25 @@
   color: $tertiary-color;
   width: 232px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   line-height: 1.14;
-  text-align: center;
+  
+
+  @media screen and(max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 .address-link {
   color: $primary-bg-color;
   width: 232px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   line-height: 1.14;
-  text-align: center;
-
-  @media screen and(min-width: $desktop) {
+  
+  @media screen and(max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 .address {
@@ -148,7 +152,7 @@
   
   color: rgba(255, 255, 255, 0.6);
   background-color: $secondary-bg-color;
-  width: 450px;
+  
   height: 50px;
   padding-left: 16px;
   font-size: 16px;
@@ -161,9 +165,19 @@
 
   @media screen and(max-width: 1199px) {
     margin-bottom: 20px;
+    display: block;
   }
+  @media screen and(min-width: $mobile) {
+    width: 450px;
+  }
+
   @media screen and(min-width: $desktop) {
     width: 358px;
+  }
+  @media screen and(max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 .footer-form-btn {

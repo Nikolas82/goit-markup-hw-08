@@ -130,11 +130,18 @@ margin-bottom: 64px;
 }
 
   .mobile-social__item{
+    position: relative;
     list-style: none;
+    margin-left: -10px;
     &:not(:last-child){
-      margin-right: 30px;
+      margin-right: 20px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+    
     }
-  }
+    }
+
+
   .mobile-social__link{
     text-decoration: none;
     color: $accent-color;
@@ -142,5 +149,12 @@ margin-bottom: 64px;
 font-size: 18px;
 line-height: 1.2;
 letter-spacing: 0.02em;
-
+display: block;
+&::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $accent-color;
+}
   }

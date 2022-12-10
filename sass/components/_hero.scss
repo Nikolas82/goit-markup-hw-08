@@ -1,5 +1,5 @@
 .hero {
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
@@ -69,10 +69,17 @@
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    width: 696px;
+    
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (max-width: 767px){
+      font-size: 26px;
+      line-height: 1.62;
+      text-align: center;
+      text-transform: uppercase;
+    }
   }
   .card-list {
     list-style: none;

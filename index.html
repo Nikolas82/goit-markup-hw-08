@@ -137,7 +137,13 @@
           <ul class="work-list">
             <li class="work-list__item">
               <div class="work-list__wrapper">
-                <img src="./images/work/box1.jpg" alt="фото 1" width="370" />
+                <picture>
+                  <source 
+                  media="(min-width: 1200px)" 
+                  srcset="./images/work/box1.jpg 1x, ./images/work/box1@2x.jpg 2x">
+                  <img src="./images/work/box1.jpg" alt="фото 1"  />
+                </picture>
+                
                 <div class="work-list__overlay">
                   <p class="work-list__text">Десктопні додатки</p>
                 </div>
@@ -145,7 +151,12 @@
             </li>
             <li class="work-list__item">
               <div class="work-list__wrapper">
-                <img src="./images/work/box2.jpg" alt="фото 2" width="370" />
+                <picture>
+                  <source 
+                  media="(min-width: 1200px)" 
+                  srcset="./images/work/box2.jpg 1x, ./images/work/box2@2x.jpg 2x">
+                  <img src="./images/work/box2.jpg" alt="фото 2"  />
+                </picture>
                 <div class="work-list__overlay">
                   <p class="work-list__text">Мобільні додатки</p>
                 </div>
@@ -153,7 +164,12 @@
             </li>
             <li class="work-list__item">
               <div class="work-list__wrapper">
-                <img src="./images/work/box3.jpg" alt="фото 3" width="370" />
+                <picture>
+                  <source 
+                  media="(min-width: 1200px)" 
+                  srcset="./images/work/box3.jpg 1x, ./images/work/box3@2x.jpg 2x">
+                  <img src="./images/work/box3.jpg" alt="фото 3"  />
+                </picture>
                 <div class="work-list__overlay">
                   <p class="work-list__text">Дизайнерські рішення</p>
                 </div>
@@ -163,16 +179,27 @@
         </div>
       </section>  
       <!--Наша команда-->
-      <!-- <section class="section section--bc">
+      <section class="section section--bc">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img
-                src="./images/imgourteam/teamcard1.jpg"
+              <picture>
+                <source 
+                media="(min-width: 1200px)" 
+                srcset="./images/imgourteam/img1_lg@1x.jpg 1x, ./images/imgourteam/img1_lg@2x.jpg 2x">
+                <source 
+                media="(min-width: 768px)" 
+                srcset="./images/imgourteam/img1_md@1x.jpg 1x, ./images/imgourteam/img1_md@2x.jpg 2x">
+                <source 
+                media="(min-width: 480px)" 
+                srcset="./images/imgourteam/img1_sm@1x.jpg 1x, ./images/imgourteam/img1_sm@2x.jpg 2x">
+                <img
+                src="./images/imgourteam/img1_sm@1x.jpg"
                 alt="Product Designer"
-                width="270"
               />
+              </picture>
+              
               <div class="team-list__content">
                 <h3 class="team-list__title">Ігор Дем'яненко</h3>
                 <p class="team-list__text">Product Designer</p>
@@ -209,11 +236,21 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/imgourteam/teamcard2.jpg"
+              <picture>
+                <source 
+                media="(min-width: 1200px)" 
+                srcset="./images/imgourteam/img2_lg@x.jpg 1x, ./images/imgourteam/img2_lg@2x.jpg 2x">
+                <source 
+                media="(min-width: 768px)" 
+                srcset="./images/imgourteam/img2_md@1x.jpg 1x, ./images/imgourteam/img2_md@2x.jpg 2x">
+                <source 
+                media="(min-width: 480px)" 
+                srcset="./images/imgourteam/img2_sm@1x.jpg 1x, ./images/imgourteam/img2_sm@2x.jpg 2x">
+                <img
+                src="./images/imgourteam/img2_sm@1x.jpg"
                 alt="Frontend Developer"
-                width="270"
               />
+              </picture>
               <div class="team-list__content">
                 <h3 class="team-list__title">Ольга Рєпіна</h3>
                 <p class="team-list__text">Frontend Developer</p>
@@ -250,11 +287,21 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/imgourteam/teamcard3.jpg"
+              <picture>
+                <source 
+                media="(min-width: 1200px)" 
+                srcset="./images/imgourteam/img3_lg@x.jpg 1x, ./images/imgourteam/img3_lg@2x.jpg 2x">
+                <source 
+                media="(min-width: 768px)" 
+                srcset="./images/imgourteam/img3_md@1x.jpg 1x, ./images/imgourteam/img3_md@2x.jpg 2x">
+                <source 
+                media="(min-width: 480px)" 
+                srcset="./images/imgourteam/img3_sm@1x.jpg 1x, ./images/imgourteam/img3_sm@2x.jpg 2x">
+                <img
+                src="./images/imgourteam/img3_sm@1x.jpg"
                 alt="Marketing"
-                width="270"
               />
+              </picture>
               <div class="team-list__content">
                 <h3 class="team-list__title">Микола Тарасов</h3>
                 <p class="team-list__text">Marketing</p>
@@ -291,11 +338,21 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/imgourteam/teamcard4.jpg"
+              <picture>
+                <source 
+                media="(min-width: 1200px)" 
+                srcset="./images/imgourteam/img4_lg@x.jpg 1x, ./images/imgourteam/img4_lg@2x.jpg 2x">
+                <source 
+                media="(min-width: 768px)" 
+                srcset="./images/imgourteam/img4_md@1x.jpg 1x, ./images/imgourteam/img4_md@2x.jpg 2x">
+                <source 
+                media="(min-width: 480px)" 
+                srcset="./images/imgourteam/img4_sm@1x.jpg 1x, ./images/imgourteam/img4_sm@2x.jpg 2x">
+                <img
+                src="./images/imgourteam/img4_sm@1x.jpg"
                 alt="UI Designer"
-                width="270"
               />
+              </picture>
               <div class="team-list__content">
                 <h3 class="team-list__title">Михайло Єрмаков</h3>
                 <p class="team-list__text">UI Designer</p>
@@ -333,7 +390,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Постійні клієнти-->
         <section class="section client">
         <div class="container">

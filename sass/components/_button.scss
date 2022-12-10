@@ -17,6 +17,9 @@
     &:focus {
   background-color: $secondary-bt-color;
 }
+@media screen and (max-width: 767px){
+  padding: 10px 24px;
+}
   }
   .btn-list{
     list-style: none;

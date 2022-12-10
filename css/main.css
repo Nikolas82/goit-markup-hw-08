@@ -1614,6 +1614,8 @@ body {
 .mobile-social__item {
   position: relative;
   list-style: none;
+}
+.mobile-social__item:not(:first-child) {
   margin-left: -10px;
 }
 .mobile-social__item:not(:last-child) {
@@ -1630,11 +1632,4 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   display: block;
-}
-.mobile-social__link::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #2196f3;
 }/*# sourceMappingURL=main.css.map */

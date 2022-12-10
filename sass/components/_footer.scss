@@ -5,9 +5,12 @@
 }
 
 .flex {
-  @media screen and(min-width: $desktop) {
+  @media screen and(min-width: $tablet) {
     display: flex;
     align-items: baseline;
+  }
+  @media screen and(min-width: $tablet) and (max-width:1199px) {
+    flex-wrap: wrap;
   }
 }
 
@@ -27,6 +30,10 @@
   @media screen and(min-width: $desktop) {
     font-size: 26px;
   }
+  @media screen and(min-width: $tablet) and (max-width:1199px) {
+    margin-left: 115px;
+    
+}
 }
 .footer-list {
   list-style: none;
@@ -64,6 +71,10 @@
   @media screen and(max-width: 1199px) {
     margin-bottom: 60px;
   }
+  @media screen and(min-width: $tablet) and (max-width:1199px) {
+    margin-left: 76px;
+    
+}
 }
 .footer-item:not(:last-child) {
   margin-bottom: 12px;
@@ -117,18 +128,27 @@
   height: 20px;
 }
 .second-div {
-  @media screen and(max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
   @media screen and(min-width: $desktop) {
     margin-left: 70px;
+  }
+  @media screen and(min-width: $tablet) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: 89px;
   }
 }
 
 .form-div {
   @media screen and(min-width: $desktop) {
     margin-left: 93px;
-  }
+}
+@media screen and(min-width: $tablet) and (max-width:1199px) {
+  margin-left: auto;
+  margin-right: auto;
+
+}
 }
 .form-title {
   font-weight: 700;
@@ -177,7 +197,7 @@
   @media screen and(max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    
   }
 }
 .footer-form-btn {

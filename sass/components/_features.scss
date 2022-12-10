@@ -35,14 +35,15 @@
     
     }
   .features-list__item {
-    @media screen and(min-width: $mobile) {
+    @media screen and(min-width: $mobile)and (max-width:1199px ){
       width: 450px;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
     
     
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+    
     
     @media screen and(max-width: 1199px){
       margin-bottom: 30px;

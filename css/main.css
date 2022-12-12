@@ -119,6 +119,12 @@ body {
 .list:hover .header-icon, .list:focus .header-icon {
   fill: #2196f3;
 }
+@media screen and (max-width: 1199px) {
+  .header-icon {
+    margin-right: 8px;
+    height: 14px;
+  }
+}
 
 .span {
   color: #000000;
@@ -181,8 +187,8 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     margin: auto;
   }
 }
@@ -296,7 +302,7 @@ body {
     font-size: 26px;
     line-height: 1.62;
     text-align: center;
-    width: 360px;
+    max-width: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -730,7 +736,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .client-point {
-    width: 210px;
+    max-width: 210px;
     margin-right: 30px;
     margin-bottom: 30px;
   }
